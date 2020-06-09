@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "1aae4d2f-76ea-4a32-ad82-044e5b03ebd4",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UploadPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/solomiia.kalinchuk/Downloads/Net developer.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:52218/pdf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52218",
+					"path": [
+						"pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DownloadPdf",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"fileName\": \"Net Developer.pdf\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52218/pdf/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52218",
+					"path": [
+						"pdf",
+						"download"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeletePdf",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Net Developer.pdf\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:52218/pdf/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52218",
+					"path": [
+						"pdf",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetBlobCollection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52218/pdf/get",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52218",
+					"path": [
+						"pdf",
+						"get"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SwaggerCheck",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:52218/swagger/v1/swagger.json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "52218",
+					"path": [
+						"swagger",
+						"v1",
+						"swagger.json"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
