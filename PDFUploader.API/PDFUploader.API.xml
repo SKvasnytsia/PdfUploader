@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PDFUploader.API</name>
+    </assembly>
+    <members>
+        <member name="M:PDFUploader.API.Controllers.PdfController.#ctor(PDFUploader.Domain.Interfaces.Blobs.IBlobStorage,Microsoft.Extensions.Logging.ILogger{PDFUploader.API.Controllers.PdfController})">
+            <summary>
+            
+            </summary>
+            <param name="blobStorage"></param>
+            <param name="pdfMetadataRepository"></param>
+            <param name="logger"></param>
+        </member>
+        <member name="M:PDFUploader.API.Controllers.PdfController.Upload(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Uploads non-existing pdf filez
+            </summary>
+            <param name="file"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PDFUploader.API.Controllers.PdfController.Download(System.String)">
+            <summary>
+            Downloads existing pdf file
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:PDFUploader.API.Controllers.PdfController.Delete(System.String)">
+            <summary>
+            Deletes existing pdf file
+            </summary>
+            <param name="fileName"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
